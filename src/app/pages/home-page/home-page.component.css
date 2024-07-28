@@ -1,0 +1,15 @@
+
+.background {
+    background-image: url('/assets/happy-employees.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 85vh; 
+    width: 100%;   
+  } 
+
+  .background {
+    background-color: #f2f2f2; 
+    display: flex; 
+    justify-content: center; 
+    align-items: flex-start; 
+}

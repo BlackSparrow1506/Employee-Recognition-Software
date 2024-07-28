@@ -1,0 +1,17 @@
+.pagination-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .pagination-controls button {
+    margin: 0 10px;
+  }
+
+  /* Center confirm dialog */
+::ng-deep .mat-dialog-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

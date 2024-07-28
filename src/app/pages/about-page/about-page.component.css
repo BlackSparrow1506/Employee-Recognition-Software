@@ -1,0 +1,15 @@
+
+.background2 {
+    background-image: url('/assets/default-share.png');
+    background-size: cover;
+    background-position: center;
+    height: 85vh; 
+    width: 100%;   
+  }
+
+  .background2 {
+    background-color: #f2f2f2; /* Grey background color */
+    display: flex; /* Use flexbox layout */
+    justify-content: center; /* Horizontally center the content */
+    align-items: flex-start; /* Align items at the start (top) of the container */
+}

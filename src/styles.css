@@ -1,0 +1,284 @@
+/* You can add global styles to this file, and also import other style files */
+/* @import "~bootstrap/dist/css/bootstrap.css"; */
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+@import "~bootstrap/dist/css/bootstrap-grid.min.css";
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-color: #EEEEEE; }
+
+ 
+
+/* content margin */
+.content{
+    margin: 25px;
+  }
+  /* mat-typography  */
+  h1{
+    font-weight: 500 !important;
+  }
+  /* breadcrumb */
+  .mat-breadcrumb {
+    padding: 15px 0px;
+  }
+  .mat-breadcrumb a {
+    text-decoration: none;
+  }
+  .mat-breadcrumb span {
+    color: var(--mdc-filled-text-field-input-text-color) !important;
+  }
+  .mat-breadcrumb a:not(:last-child)::after {
+    content: "/";
+    margin: 0 8px;
+  }
+
+  /* search page */
+  .form-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .example-full-width {
+    width: 100%;
+    height: 40px; 
+    font-size: 14px !important;
+    line-height: initial;
+  }
+  .mat-mdc-radio-button ~ .mat-mdc-radio-button {
+    margin-left: 16px;
+  }
+  .mat-mdc-radio-button .mdc-radio {
+    --mdc-radio-state-layer-size: 10px !important;
+  }
+  .mt-20{
+    margin-top: 20px;
+  }
+  ::ng-deep .mat-mdc-text-field-wrapper {
+    height: 40px !important;
+  }
+  ::ng-deep .mat-mdc-form-field-flex {
+    margin-top: -7px !important;
+  }
+  .mat-mdc-form-field{
+    padding-top: 6px
+  }
+  ::ng-deep .mat-mdc-form-field-subscript-wrapper{
+    margin-bottom: -18px !important;
+  }
+  ::ng-deep .mat-mdc-radio-button .mdc-radio {
+    padding: 1px !important;
+  }
+  .mdc-radio__background {
+    --mdc-radio-state-layer-size: 30px !important;
+  }
+  ::ng-deep .mat-mdc-form-field-icon-suffix .mat-icon{
+    color: var(--mdc-filled-text-field-input-text-placeholder-color) !important;
+  }
+  .button-with-icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .button-text {
+    margin-right: 8px; 
+  }
+  /* .mat-mdc-card{
+    margin-bottom: 15px;
+  }  */
+  mat-icon {
+    transition: transform 0.3s;
+    transform: rotate(0deg);
+  }
+  [hidden] mat-icon {
+    transform: rotate(-180deg);
+  }
+  .pt-15{
+    padding: 15px 0 0;
+  }
+  /* nav */
+  .mat-drawer-container{
+    position: initial;
+  }
+   .mat-drawer{
+    width: 80%;
+  }
+  .container {
+    height: 100vh;
+  }
+
+  .desktop-menu {
+    display: none;
+  }
+
+  @media (min-width: 975px) {
+    .desktop-menu {
+      display: flex;
+    }
+
+    .mobile-menu {
+      display: none;
+    }
+  }
+
+  .mega-dropdown {
+    display: flex;
+  }
+
+  .column {
+    flex: 1;
+    padding: 16px;
+  }
+
+  .topnav ::ng-deep .mat-sidenav.mat-primary {
+  background: var(--mat-toolbar-container-background-color);
+      color: var(--mat-toolbar-container-text-color);
+      --mat-toolbar-container-background-color: #3f51b5 !important;
+      --mat-toolbar-container-text-color: white !important;
+      padding: 0 20px;
+  }
+  .topnav::ng-deep .mdc-list-item__primary-text {
+    color:white !important;
+  }
+   mat-form-field label {
+    position: absolute;
+    top: -20px;
+    left: 10px;
+    background-color: white;
+    padding: 0 5px;
+  }
+  /* nav button */
+  .full-width-button {
+    width: 100%;
+    justify-content: left;
+    text-align: left;
+    height: auto !important;
+    padding: 6px 6px;
+  }
+  .mega-dropdown h3{
+    margin: 5px 0 5px;
+    font-weight: 500;
+    line-height:20px;
+  }
+  .mega-dropdown ::ng-deep.mat-divider{
+    margin: 10px 0;
+  }
+  /* tab */
+  .tab-label {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+    font-size: 13px !important;
+  }
+  ::ng-deep.mdc-tab{
+    padding-right: 14px !important;
+    padding-left: 14px !important;
+
+  }
+  ::ng-deep.mdc-text-field--filled.mdc-text-field--disabled {
+    background-color: #D1D1D1 !important;
+    cursor: not-allowed !important;
+
+  }
+  /* ::ng-deep.mdc-text-field--filled.mdc-text-field--disabled .mdc-text-field__input{
+    color: black !important;
+  } */
+  ::ng-deep.mat-mdc-tab-body-content {
+    height: 100%;
+    overflow: hidden !important;;
+  }
+  .icon-align {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+
+  }
+  .icon-align button {
+    margin-right: 5px;
+  }
+  .stroked-button {
+    --mdc-icon-button-state-layer-size: 40px;
+    padding: 6px;
+  }
+  .text-right{
+    text-align: right;
+  }
+  /* mat-list-item {
+    display: flex;
+    justify-content: space-between;
+  } */
+  .input-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .input-container ::ng-deep .mat-mdc-form-field{
+    margin-right: 5px;
+  }
+  .pull-right {
+    float: right!important;
+  }
+  .pull-left {
+    float: left!important;
+  }
+  @media screen and (min-width: 769px) {
+
+    .top-features {
+      order: 2;
+    }
+
+    .item-brand {
+      order: 1;
+    }
+  }
+  .h-100{
+    height: 100%; 
+  }
+  .w-100{
+    width: 100%;
+  }
+
+  .parent-container {
+    height: 100%;
+  }
+
+  .card-container {
+    height: 100%;
+  }
+  ::ng-deep .mdc-list-item.mdc-list-item--with-one-line {
+    height: 36px !important;
+    padding: 0px;
+  }
+  ::ng-deep.mat-mdc-tab-group{
+  padding-top: 15px;
+  }
+
+  /* go to */
+  .go-to-top-button {
+    position: fixed;
+    right: 15px;
+    bottom: 120px;
+    z-index: 99999;
+    border-radius: 4px;
+    transition: all 0.4s;
+  }
+  /* toolbar */
+  .sticky-toolbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: top 0.3s ease-in-out;
+  }
+  /* sidebar fixed */
+  ::ng-deep .mat-drawer-backdrop{
+    position: fixed !important;
+  }
+  .mat-elevation-z8 {
+    margin: 20px;
+  }
+
+  .edit-icon,
+  .delete-icon {
+    cursor: pointer;
+    margin-right: 5px;
+  }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

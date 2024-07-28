@@ -1,0 +1,51 @@
+<div>
+    <h1>Create Employee</h1>
+    <div class="container mt-3">
+        <div class="card">
+          <div class="card-header">
+            <h4>
+              <a routerLink="/" class="btn btn-danger float-end">Back</a>
+            </h4>
+          </div>
+          <div class="card-body">
+            <form [formGroup]="userForm" (ngSubmit)="saveEmployee()">
+              <div class="mb-3">
+                <label>Name</label>
+                <input type="text" formControlName="name" name="name" class="form-control"/>
+                <div *ngIf="userForm.controls['name'].invalid && (userForm.controls['name'].dirty || userForm.controls['name'].touched)" class="text-danger">
+                  <div *ngIf="userForm.controls['name'].errors?.['required']">Name is required</div>
+                  <div *ngIf="!isNameValid(userForm.controls['name'].value)">Name must contain only alphabetic characters</div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label>Designation</label>
+                <input type="text" formControlName="designation" name="designation" class="form-control"/>
+              </div>
+              <div class="mb-3">
+                <label>Email</label>
+                <input type="text" formControlName="email" name="email" class="form-control"/>
+                <div *ngIf="userForm.controls['email'].invalid && (userForm.controls['email'].dirty || userForm.controls['email'].touched)" class="text-danger">
+                    <div *ngIf="userForm.controls['email'].errors?.['required']">email is required</div>
+              </div>
+            </div>
+              <div class="mb-3">
+                <label>Phone</label>
+                <input type="text" pattern="[0-9]*" title="Only numbers are allowed" formControlName="phone" name="phone" class="form-control"/>
+                <div *ngIf="userForm.controls['phone'].invalid && (userForm.controls['phone'].dirty || userForm.controls['phone'].touched)" class="text-danger">
+                  <div *ngIf="userForm.controls['phone'].errors?.['required']">Phone number is required</div>
+                  <div *ngIf="!isPhoneValid(userForm.controls['phone'].value)">Phone number must contain only numeric characters</div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="picture">Picture</label>
+                <input type="file" id="picture" name="picture" accept="image/*" formControlName="picture" name="picture" (change)="onFileSelected($event, item)" class="form-control"/>
+              </div>
+
+              <div class="mb-3">
+                <button type="submit" class="btn btn-primary m-1" [disabled]="!isNameValid(userForm.controls['name'].value) || !isPhoneValid(userForm.controls['phone'].value)">Save</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
