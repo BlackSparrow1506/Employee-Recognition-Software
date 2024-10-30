@@ -1,0 +1,68 @@
+/* Center the login container using flexbox */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    animation: backgroundAnimation 10s infinite alternate; /* Animation for background color */
+  }
+  
+  /* Keyframes for background color change */
+  @keyframes backgroundAnimation {
+    0% {
+      background-color: #6a11cb; /* Purple */
+    }
+    25% {
+      background-color: #2575fc; /* Blue */
+    }
+    50% {
+      background-color: #00c6ff; /* Light Blue */
+    }
+    75% {
+      background-color: #ff7e5f; /* Coral */
+    }
+    100% {
+      background-color: #feb47b; /* Light Coral */
+    }
+  }
+  
+  mat-card {
+    width: 400px; /* Set a fixed width for the card */
+    padding: 20px; /* Padding around the content */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  /* Hover effect for the card */
+  mat-card:hover {
+    transform: scale(1.05); /* Slightly enlarge the card on hover */
+  }
+  
+  /* Form field styling */
+  mat-form-field {
+    width: 100%; /* Full width */
+    margin-bottom: 20px; /* Space between fields */
+  }
+  
+  /* Button styling */
+  button {
+    width: 100%; /* Full width */
+    padding: 10px;
+    font-size: 16px; /* Larger text for button */
+    border-radius: 5px; /* Rounded corners */
+  }
+  
+  /* Primary button hover effect */
+  button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 480px) {
+    mat-card {
+      width: 90%; /* Full width on smaller screens */
+    }
+  }
+  

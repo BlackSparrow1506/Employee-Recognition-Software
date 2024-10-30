@@ -40,6 +40,7 @@ import { CommonService } from './services/common.service';
 import { ConfirmDialogComponent } from './components/confirm-dialog/confirm-dialog.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { ToastrModule } from 'ngx-toastr';
+import { LoginComponent } from './page/login/login.component';
 
 
 @NgModule({
@@ -52,6 +53,7 @@ import { ToastrModule } from 'ngx-toastr';
     EmployeeCreateComponent,
     ConfirmDialogComponent,
     EmpListComponent,
+    LoginComponent,
     
   ],
   imports: [
